@@ -11,7 +11,8 @@
         "ext-sockets": "*",
         "psr/log": "^1.1",
         "ralouphie/getallheaders": "2.0.5",
-        "ramsey/uuid": "^3.7"
+        "ramsey/uuid": "^3.7",
+        "webmozart/assert": "^1.4"
     },
     "require-dev": {
         "doctrine/coding-standard": "^6.0",
