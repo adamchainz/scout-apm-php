@@ -11,7 +11,8 @@ PHP_API=$($PHP_PATH -i | grep 'PHP API' | sed -e 's/PHP API => //')
 THREAD_SAFETY=$($PHP_PATH -i | grep 'Thread Safety' | sed -e 's/Thread Safety => //')
 
 if [ "$THREAD_SAFETY" == "enabled" ]; then
-  ZTS_FLAG="-zts"
+#  ZTS_FLAG="-zts"
+  ZTS_FLAG="" # intentional break to check CI fails if ext does not load
 else
   ZTS_FLAG=""
 fi
